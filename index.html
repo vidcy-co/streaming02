@@ -1,173 +1,220 @@
-<!DOCTYPE html>
-<html lang="ms">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemain Video</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f0f0f;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            width: 90%;
-            max-width: 800px;
-            text-align: center;
-        }
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            background: #000;
-        }
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        h1 {
-            margin-bottom: 20px;
-            font-weight: 300;
-            color: #efefef;
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #888;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <h1>Tonton Video</h1>
-        
-        <div class="video-wrapper">
-            <iframe 
-                src="https://videyc.us/v/nQjZoEKRf1" 
-                allowfullscreen 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
-            </iframe>
-        </div>
-
-        <div class="footer">
-            <p>&copy; 2024 Paparan Video HTML5</p>
-        </div>
-    </div>
-
-</body>
-</html>
-"""
-
-with open("index.html", "w", encoding="utf-8") as f:
-    f.write(html_content)
-
-
-Fail index.html anda telah berjaya dihasilkan.
-Ikon HTML
- index 
-HTML
-
-Fail ini mengandungi struktur HTML5 yang responsif dengan gaya visual yang moden (tema gelap). Saya telah menggunakan elemen iframe untuk memaparkan kandungan daripada URL yang anda berikan agar ia boleh dimainkan terus di dalam pelayar web.
-
-Ciri-ciri utama fail ini:
-
-Reka Bentuk Responsif: Video akan menyesuaikan saiz mengikut skrin peranti (nisbah 16:9).
-
-Antaramuka Moden: Menggunakan latar belakang gelap yang selesa untuk tontonan video.
-
-Fungsi Penuh: Menyokong mod skrin penuh (allowfullscreen).
-
-
-
-
-
-Gemini adalah AI dan dapat melakukan kesalahan.
 
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemain Video</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f0f0f;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            width: 90%;
-            max-width: 800px;
-            text-align: center;
-        }
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            background: #000;
-        }
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        h1 {
-            margin-bottom: 20px;
-            font-weight: 300;
-            color: #efefef;
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #888;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Private Contact Center</title>
+<meta name="description" content="Choose your preferred secure contact method. Fast response daily.">
+
+<!-- Anti Index -->
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+<meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet">
+<meta name="bingbot" content="noindex,nofollow,noarchive,nosnippet">
+
+<!-- Privacy -->
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="referrer" content="no-referrer">
+
+<!-- Open Graph (Facebook Preview) -->
+<meta property="og:title" content="Private Contact Center">
+<meta property="og:description" content="Choose your preferred secure contact method. Fast response daily.">
+<meta property="og:image" content="https://link6.my.id/images/share.jpg">
+<meta property="og:url" content="https://link6.my.id/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Private Contact Center">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="https://ibb.co/WWqLG1z6">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#ffffff;
+color:#111;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:20px;
+opacity:0;
+transition:opacity .35s ease;
+}
+
+body.loaded{
+opacity:1;
+}
+
+.wrapper{
+width:100%;
+max-width:470px;
+text-align:center;
+}
+
+.avatar{
+width:120px;
+height:120px;
+margin:0 auto 18px;
+border-radius:50%;
+overflow:hidden;
+background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#8a3fb6 90%);
+padding:4px;
+}
+
+.avatar img{
+width:100%;
+height:100%;
+border-radius:50%;
+object-fit:cover;
+background:#fff;
+}
+
+h1{
+font-size:24px;
+font-weight:700;
+margin-bottom:8px;
+}
+
+.desc{
+font-size:14px;
+color:#666;
+margin-bottom:6px;
+}
+
+.desc2{
+font-size:13px;
+color:#888;
+margin-bottom:24px;
+line-height:1.5;
+}
+
+.btn{
+display:flex;
+align-items:center;
+gap:14px;
+width:100%;
+background:#fff;
+border:1px solid #ececec;
+border-radius:16px;
+padding:14px;
+margin-bottom:14px;
+cursor:pointer;
+box-shadow:0 8px 18px rgba(0,0,0,.06);
+transition:.18s ease;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+box-shadow:0 12px 24px rgba(0,0,0,.08);
+}
+
+.icon{
+width:48px;
+height:48px;
+border-radius:12px;
+object-fit:cover;
+flex-shrink:0;
+}
+
+.txt{
+font-size:16px;
+font-weight:600;
+color:#111;
+text-align:left;
+}
+
+.footer{
+margin-top:18px;
+font-size:12px;
+color:#999;
+line-height:1.6;
+}
+
+.footer a{
+color:#777;
+text-decoration:none;
+margin:0 6px;
+}
+</style>
+
+<!-- Histats -->
+
+
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>Tonton Video</h1>
-        
-        <div class="video-wrapper">
-            <!-- Menggunakan Iframe untuk memaparkan kandungan dari URL yang diberikan -->
-            <iframe 
-                src="https://videyc.us/v/nQjZoEKRf1" 
-                allowfullscreen 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
-            </iframe>
-        </div>
+<div class="wrapper">
 
-        <div class="footer">
-            <p>&copy; 2024 Paparan Video HTML5</p>
-        </div>
-    </div>
+<div class="avatar">
+<img src="https://ibb.co/WWqLG1z6" alt="logo">
+</div>
 
+<h1>Private Contact Center</h1>
+
+<div class="desc">Choose your preferred contact method</div>
+<div class="desc2">
+Fast response available daily.<br>
+Secure and private communication options.
+</div>
+
+<div class="btn" onclick="buka(1)">
+<img class="icon" src="https://link6.my.id/images/WhatsApp.svg_.png" alt="">
+<div class="txt">WhatsApp Chat</div>
+</div>
+
+<div class="btn" onclick="buka(2)">
+<img class="icon" src="https://link6.my.id/images/vidcall.jpeg" alt="">
+<div class="txt">Video Call Support</div>
+</div>
+
+<div class="btn" onclick="buka(3)">
+<img class="icon" src="https://link6.my.id/images/TELE1.jpeg" alt="">
+<div class="txt">Telegram Contact</div>
+</div>
+
+<div class="btn" onclick="buka(4)">
+<img class="icon" src="https://link6.my.id/images/michat.jpeg" alt="">
+<div class="txt">MiChat Contact</div>
+</div>
+
+<div class="btn" onclick="buka(5)">
+<img class="icon" src="https://link6.my.id/images/MESSENGER.png" alt="">
+<div class="txt">Messenger Contact</div>
+</div>
+
+<div class="footer">
+Private support service.<br>
+<a href="/">About</a> |
+<a href="/">Privacy</a>
+</div>
+
+</div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+document.body.classList.add("loaded");
+});
+
+const links = {
+1:"https://incorporateunderstand.com/kfzdtudmfe?key=a02a0f97c924391fa381eda6d9601ed3",
+2:"https://incorporateunderstand.com/kfzdtudmfe?key=a02a0f97c924391fa381eda6d9601ed3",
+3:"https://incorporateunderstand.com/kfzdtudmfe?key=a02a0f97c924391fa381eda6d9601ed3",
+4:"https://incorporateunderstand.com/kfzdtudmfe?key=a02a0f97c924391fa381eda6d9601ed3",
+5:"https://incorporateunderstand.com/kfzdtudmfe?key=a02a0f97c924391fa381eda6d9601ed3"
+};
+
+function buka(id){
+window.open(links[id], "_blank", "noopener,noreferrer");
+}
 </body>
 </html>
-
